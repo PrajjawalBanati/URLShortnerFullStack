@@ -9,12 +9,12 @@ services:
       # Add environment variables for Redis connection details (if applicable)
       REDIS_HOST: redis  # Assuming Redis service name is "redis"
 
-#  frontend:
-#    build: ./frontend  # Path to your frontend Dockerfile
-#    ports:
-#      - "3000:3000"  # Expose port 3000 of the container to port 3000 on your host
-#    depends_on:
-#      - backend  # Start the frontend service only after the backend is up
+  frontend:
+    build: ./frontend  # Path to your frontend Dockerfile
+    ports:
+      - "3000:3000"  # Expose port 3000 of the container to port 3000 on your host
+    depends_on:
+      - backend  # Start the frontend service only after the backend is up
 
   redis:
     image: redis:7.2.4  # Use a specific version if needed
