@@ -7,3 +7,4 @@ WORKDIR /app
 COPY . .
 RUN ./gradlew build -x test && cp /app/build/libs/*-SNAPSHOT.jar /app/app.jar
 CMD ["java", "-jar", "app.jar"]
+EXPOSE 8080
