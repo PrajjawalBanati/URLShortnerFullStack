@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL_API_BASE_URL = "http://34.125.38.52:80/url"
+const URL_API_BASE_URL = "https://urlshortnerfullstack.onrender.com/url"
 
 class URLService{
 
