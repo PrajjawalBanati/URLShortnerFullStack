@@ -12,14 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.print.DocFlavor;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 @Controller
 @RestController
 public class UrlController {
     @Autowired
     private UrlService urlService;
 
-    @CrossOrigin(origins = "*")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping(value = "/url", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ResponseEntity<Url> shortenUrl(@RequestBody UrlShortnerDto urlShortnerDto) {
@@ -27,7 +27,7 @@ public class UrlController {
         return ResponseEntity.ok().body(shortUrlEntry);
     }
 
-    @CrossOrigin(origins = "*")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/url/{key}")
     @ResponseBody
     public Url redirectURL(@PathVariable String key) {
