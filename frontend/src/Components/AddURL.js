@@ -70,7 +70,7 @@ export const AddURL = () => {
                 name="url"
                 value={url}
                 onChange={(e) => handleChange(e)}
-                required="true"></input>
+                required={true}></input>
             </div>
             <div className="items-center justify-center h-14 w-full my-4 space-x-4 pt-2">
                 <button onClick={saveUrl} className="rounded-full text-white bg-green-400 hover:bg-green-700 px-6 py-2 ">
