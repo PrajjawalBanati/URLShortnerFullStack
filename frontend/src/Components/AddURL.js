@@ -85,7 +85,7 @@ export const AddURL = () => {
                     <label className="block text-black-700 text-sm font-bold"> Here's your short URL</label>
                     <div className="items-center justify-center h-14 w-full my-4">
                     <div className = "w-auto rounded-full bg-gray-600 text-white hover:cursor-pointer" onClick={getURL}>
-                        <span className="justify-center px-48">{shortUrl}</span>
+                        <span className="justify-center px-4">{shortUrl}</span>
                     </div>
                     </div>
                 </>
